@@ -17,6 +17,10 @@
     },
     "license": "MIT",
     "main": "orokop.js",
+    "bin": "./orokop.js",
+    "engines": {
+        "node": ">=7.10.0"
+    },
     "keywords": [
         "file structure",
         "generate",

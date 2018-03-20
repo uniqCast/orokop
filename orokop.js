@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const package = require("./package.json")
 const createFolder = require("./functions/create-folder.js")
 const isFile = require("./functions/is-file.js")
