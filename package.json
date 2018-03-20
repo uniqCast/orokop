@@ -1,0 +1,25 @@
+{
+    "name": "orokop",
+    "version": "1.0.0",
+    "description": "Generate files and folders based on the structure definition and file templates.",
+    "homepage": "https://github.com/uniqcast/orokop",
+    "author": "uniqCast <developer@uniqcast.com> (http://uniqcast.com/)",
+    "contributors": [
+        "Vjekoslav Artić <vjekoslav.artic@uniqcast.com>",
+        "Denis Zografski <denis.zografski@uniqcast.com>"
+    ],
+    "respository": {
+        "type": "git",
+        "url": "https://github.com/uniqcast/orokop.git"
+    },
+    "bugs": {
+        "url": "https://github.com/uniqcast/orokop/issues"
+    },
+    "license": "MIT",
+    "main": "orokop.js",
+    "keywords": [
+        "file structure",
+        "generate",
+        "scaffolding"
+    ]
+}
