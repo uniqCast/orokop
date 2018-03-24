@@ -91,7 +91,7 @@ function render (settings)
 module.exports = render
 
 /* Asynchronous render function */
-asyn function render (settings)
+async function render (settings)
 {
     const template = await getTemplate(settings)
 
