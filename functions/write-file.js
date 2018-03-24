@@ -1,13 +1,19 @@
 const fs = require("./fs-async.js")
 
+function isAsync (fn)
+{
+    return fn.constructor.name === "AsyncFunction"
+}
+
 async function writeFile (element, settings)
 {
     settings = Object.assign(settings, element.settings)
 
     console.info(`File -> ${element.path}`)
 
-    const template = require(element.template)
-    const error = await fs.writeFile(element.path, template(settings))
+    const render = require(element.template)
+    const result = isAsync(render) ? await render(settings) : render(settings)
+    const error = await fs.writeFile(element.path, result)
 
     if (!error)
     {
